@@ -1,0 +1,39 @@
+% (TeX-command-master)
+
+%Compiled with pdflatex
+\documentclass[12pt, a4paper]{apa6} 
+\usepackage{natbib} % APA style bibliography
+% Document Sizing Setup (US Letter)
+\usepackage{geometry}  
+\geometry{a4paper, margin=1in, papersize={8.5in, 11in}}
+\bibliographystyle{apalike}
+%%
+\usepackage[american]{babel} 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage{mathptmx} % Times New Roman font
+% Page Formatting
+\usepackage{ragged2e}
+\usepackage{mwe}
+\setlength{\RaggedRightParindent}{0.5in}
+\pagenumbering{gobble} % Page numbering (gobble = none)
+\linespread{2} % Line spacing
+\renewcommand{\bibsection}{} 
+\pagestyle{myheadings}
+
+%\lhead{}
+\begin{document}
+
+\begin{center} 
+% Title
+\end{center}
+
+\RaggedRight
+% Start of Essay
+
+\newpage 
+
+% Import References
+\bibliography{ex} 
+\end{document}
+
